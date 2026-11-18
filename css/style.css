@@ -1,0 +1,158 @@
+/* RESET PÁGINA*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --Rojo:  #921e6b;
+     --Rojo:  #44aa72;
+      --Rojo:  #420000;   
+}
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+body {
+  margin: 0;
+  font-family: "Redaction 10", serif;
+  color: var(--Rojo);
+  background: linear-gradient (135deg darkred, #410202 );
+  overflow-x: hidden;
+}
+
+ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+a { 
+    text-decoration: n one ; 
+    color: inherit; 
+}
+
+img { 
+    max-width: 100%; 
+    display: block; 
+}
+
+.container{
+    width: min(1100px, calc(100% - 2rem)); 
+        margin: 0 auto;
+}
+
+/* Encabezado */
+.RIVANNI {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--Rojo); 
+  /* Cambia por el color de fondo de tu marca */
+  border-bottom: 1px solid #550101;
+}
+
+.header-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+  gap: 1.5rem;
+}
+
+/* logo imágen*/
+.RIVANNI {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0; 
+  /* Evita que el menú aplaste el logo */
+}
+
+.RIVANNI img {
+  height: 48px;       /* Ajusta entre 40px y 60px según el diseño de tu logo */
+  width: auto;     
+  max-width: 200px; 
+  object-fit: contain;
+  display: block;
+}
+
+/* Navegación y lista en horizontal */
+.nav-RIVANNI {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.nav-RIVANNI ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-RIVANNI a {
+  text-decoration: none;
+  color: #7c0404;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+
+.nav-RIVANNI a:hover {
+  color: #680000; /* Color principal de  TU MARCA*/
+}
+
+/* Botón de WhatsApp */
+.btn.primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: #5c0202; /* Ajusta al color de tu marca */
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+
+.btn.primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+
+.btn.primary svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Ajuste básico para celulares */
+@media (max-width: 768px) {
+  .header-inicio {
+    flex-wrap: wrap;
+    padding-block: 0.75rem;
+  }
+
+
+.nav-RIVANNI {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+
+.nav-RIVANNI ul {
+    gap: 0.85rem;
+    font-size: 0.9rem;
+  }
+}
