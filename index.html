@@ -2,8 +2,7 @@
 <html>
 <head>
 <title>RIVANNI - JOYERIA</title>
-</head>
-<head>
+
   <meta charset="UTF-8">
   <meta name="description" content="Joyeria minimalista y atemporal">
   <meta name="keywords" content="Diferente tipo de joyeria, enfocada el lo clásico y atemporal">
@@ -18,35 +17,137 @@
 
 <body>
     <!------------- ENCABEZADE DE MI PÁGINA WEB ------------->
-    <head class="RIVANNI">
-        <div class="container header inicio">
+    <header class="RIVANNI">
+        <div class="container header-inicio">
             <a href="#inicio" class="logo-RIVANNI">
                 <img src="img/logoo.png" alt="logo de RIVANNI">
             </a>
 
         <nav class="nav-RIVANNI">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#INICIO">INICIO</a></li>
                 <li><a href="#productos">PRODUCTOS</a></li>
                 <li><a href="#CATÁLOGO">CATÁLOGO</a></li>
                 <li><a href="#ABOUT US">ABOUT US</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
              </ul>
+  
 
     <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaria ver tu catalogo de joyeria')">
           <i data-lucide="message-circle"></i> Pedir ahora
         </button>
+            </nav>
+        </div>
+
+    </header>
+
+    <!--CONTENIDO PRINCIPAL-->
+
+    <main>
+
+     <!--SECCIÓN DEL HERO-->
+
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">WELCOME TO RIVANNI</p>
+      <h1 class="intro-title" id="intro-title">MODA<br><span>Y ELEGANCIA</span></h1>
+      <p class="intro-description">El lujo está en los detalles</p>
+    </section>
+
+<!-------aqui vamos a colocar el video y las dos imagenes---------->
+
+
+    <!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
+
+
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="img/hero4vid.mp4"
+          aria-label="Video de presentación">
+          <source src="img/hero4vid.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> COLECCIÓN</p>
+          <h2 class="media-card__title">BELLEZA<br>SIN TIEMPOS</h2>
+          <a class="media-card__link" href="#contacto">Descubre más <span aria-hidden="true">↗</span></a>
+        </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/hero1.jpeg"
+          alt="Fotografía que representa mi trayectoria"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">02 / TRAYECTORIA</p>
+          <h2 class="media-card__title">EL CAMINO<br>RECORRIDO</h2>
+          <a class="media-card__link" href="#contacto">Conocer más <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/hero2.jpeg"
+          alt="Fotografía que representa mis proyectos"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">03 / PROYECTOS</p>
+          <h2 class="media-card__title">IDEAS QUE<br>INSPIRAN</h2>
+          <a class="media-card__link" href="#contacto">Ver proyectos <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+    </section>
 
 
 
-    </head>
-
-
-
-
- <p>La elegancia está en los detalles</p>
-<h1>RIVANNI</h1>
-
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> RIVANNI. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
 
 </body>
 </html>
